@@ -24,5 +24,11 @@ public class StudentTest {
     assertEquals(britney.getFeesPaid(), feesPaid);
     assertEquals(britney.getYear(), year);
     assertEquals(britney.getId(), 1);
+
+    Student vivian = new Student("Vivian", 10000); 
+    Student lorraine = new Student("Lorraine", 5000);
+
+    assertEquals(vivian.getId(), 2);
+    assertEquals(lorraine.getId(), 3);
   }
 }

@@ -12,12 +12,23 @@ public class Student implements Serializable {
   private int year = 1; 
 
   // Constructors
+  /**
+   * Create a new Student Entry
+   * @param name : name is the student's first and last name
+   * @param fees : fees is the amount the student needs to pay to the school
+   */
   public Student(String name, int fees) {
     this.id = getNewId();
     this.name = name;
     this.fees = fees;
   }
 
+  /**
+   * Create a new Student Entry
+   * @param name
+   * @param fees
+   * @param feesPaid
+   */
   public Student(String name, int fees, int feesPaid) {
     this.id = getNewId();
     this.name = name;
@@ -25,6 +36,13 @@ public class Student implements Serializable {
     this.feesPaid = feesPaid;
   }
 
+  /**
+   * Create a new Student Entry
+   * @param name
+   * @param fees
+   * @param feesPaid
+   * @param year
+   */
   public Student(String name, int fees, int feesPaid, int year) {
     this.id = getNewId();
     this.name = name;
